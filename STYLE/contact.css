@@ -29,6 +29,7 @@ header {
   align-items: center;
   padding: 30px 10%;
   background-color: rgba(230, 213, 213, 0.116);
+  width: 100%;
 }
 .menu {
   width: 5vh;
@@ -337,7 +338,7 @@ form {
 
 .fcontrol {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 600px;
+  width: 50%;
   background: transparent;
   outline: none;
   border-bottom: 2px #ffffff5e solid;
@@ -369,29 +370,103 @@ input {
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  width: fit-content ;
+  width: fit-content;
   margin-left: 333px;
 }
-.button {
-  
-
 .BS {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.BS button {
   background: #e28a8a;
   border-color: transparent;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 6vw;
+  width: 50%;
   height: auto;
   display: flex;
   justify-content: center;
-  left: 22%;
   padding: 10px 25px;
   background-color: #ece8e29a;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  width: fit-content ;
-  margin-left: 333px;
+  text-align: center;
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Images/BG.jpg");
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer_container {
+    max-width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+
+.ul {
+    list-style: none;
+}
+
+.footer {
+    background-image: url("/Images/footer.png");
+}
+
+.footer_column {
+    width: 25%;
+    padding: 3% 15px;
+}
+
+.footer_column h4{
+
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#80ffdb;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer_column ul li:not(:last-child){
+    display: flex;
+    flex-direction: column;
+}
+.footer_column ul li a{
+    font-size: 16px; 
+    text-transform: capitalize;
+    color: rgb(231, 227, 227);
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer_column ul li a:hover {
+    color: white;
+    padding-left: 8px;
 }

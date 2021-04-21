@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg">
+ 
+    <div class="header">
+      <header>
+        <img class="logo" src="Images/LOGO.png" alt="logo" />
+        <nav>
+          <ul class="narea" id="nav">
+            <li><a href="index.HTML">Home</a></li>
+            <li><a href="Gallery.html">Cars</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li><a href="Reserve.html">Reserve Now</a></li>
+          </ul>
+        </nav>
+        <button class="menuBtn" onclick="myFunction()">
+          <img src="Images/menu.svg" class="menu" alt="" srcset="" />
+        </button>
+      </header>
+    </div>
+    <div class="form">
+      <form name="reserve" onsubmit="return false">
+        <span>Select vehicule type :</span> <br />
+        <select name="vehicule" onchange="liste()">
+          <option value="0">Select Vehicule Type</option>
+          <option value="10">Moto</option>
+          <option value="12">Citadine</option>
+          <option value="14">Compact</option>
+          <option value="23.8">Berline</option>
+          <option value="16">Utilitaire</option>
+          <option value="900">Engine de Chantier</option>
+          <option value="297.5">Camion</option></select><br />
+        <span>Select Fuel type :</span><br />
+        <select name="type" id="">
+          <option value="">Select Fuel type</option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option></select
+        ><br />
+        <input type="radio" name="season" value="Automatique" id="auto" >Automatique
+        <input type="radio" name="season" value="manuelle" id="man">Manuelle
+        <br>
+        <span>How many days :</span><br />
+        <input class="input" type="number" id="days" placeholder="Enter number of days" />
+        <br>
+        <span id="price"></span>
+        <div id="btn">
+        <button id="btnz" onclick="calculate()">Calculate</button>
+        </div>
+    </form>
+    </div>
+    <div class="footer">
+        <div class="footer_container">
+          <div class="row">
+            <div class="footer_column">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">who are we?</a></li>
+                <li><a href="#">our other services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">how we give back</a></li>
+              </ul>
+            </div>
+            <div class="footer_column">
+              <h4>Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">safety</a></li>
+                <li><a href="#">refunds</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer_column">
+              <h4>Our Branches</h4>
+              <ul>
+                <li><a href="#">U.S</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">Middle East</a></li>
+                <li><a href="#">North Africa</a></li>
+              </ul>
+            </div>
+            <div class="footer_column">
+              <h4>Follow Us</h4>
+              <div class="social_media">
+                <li>
+          <a href="#"><img class="I1" src="Images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img class="I4" src="Images/instagram.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img class="I3" src="Images/Twitter.png" /></a>
+        </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
